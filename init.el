@@ -28,6 +28,9 @@
 
   (setq ac-use-fuzzy nil)
 
+  ;; Switch frames using the control key
+
+  (windmove-default-keybindings 'control)
 
   ;; Show line numbers
 
