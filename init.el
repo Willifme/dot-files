@@ -28,10 +28,18 @@
 
   (setq ac-use-fuzzy nil)
 
-  ;; Switch frames using the control key
+  ;; Switch frames using the control/meta key
 
-  (windmove-default-keybindings 'control)
+  (if (eq 'system-type 'darwin)
 
+      ;; Fix for OSX
+      
+      (windmove-default-keybindings 'meta)
+
+    ;; Other OSs uses control
+    
+    (windmove-default-keybindings 'control))
+    
   ;; Show line numbers
 
   (global-linum-mode 1)
@@ -147,7 +155,7 @@
   (add-to-list 'load-path "~/.emacs.d/elpa/go-mode")
 
   ;; Require go-mode
-  (require 'go-mode)
+  (require 'go-mode-autoloads)
 
   ;; Require go-autocomplete
   
