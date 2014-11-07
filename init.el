@@ -30,15 +30,23 @@
 
   ;; Switch frames using the control/meta key
 
-  (if (eq 'system-type 'darwin)
+  (isOSX '(lambda ()
 
-      ;; Fix for OSX
+	    (windmove-default-keybindings 'meta))
+	 
+	 '(lambda ()
+	    
+	    (windmove-default-keybindings 'control)))
+
+  ;; (if (eq 'system-type 'darwin)
+
+  ;;     ;; Fix for OSX
       
-      (windmove-default-keybindings 'meta)
+  ;;     (windmove-default-keybindings 'meta)
 
-    ;; Other OSs uses control
+  ;;   ;; Other OSs uses control
     
-    (windmove-default-keybindings 'control))
+  ;;   (windmove-default-keybindings 'control))
     
   ;; Show line numbers
 
@@ -142,11 +150,11 @@
   
   (add-to-list 'ac-sources 'ac-sources-c-headers)
 
-  (if (eq 'system-type 'darwin)
+  (isOSX '(lambda ()
 
-      ;; Revise this later
-      
-      (add-to-list 'achead:include-directories '"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.0/include")))
+	 ;; Revise this later
+	     
+	 (add-to-list 'achead:include-directories '"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.0/include")))
 
 (defun setup-autocomplete-go ()
 
@@ -253,5 +261,23 @@
       (when (looking-at "^    ")
 	
         (replace-match "")))))
+
+
+(defun isOSX (success &optional failure)
+
+  "Checks if on osx then takes a function or a optional alternative thing to do"
+
+  (if (eq 'system-type 'darwin)
+
+      ;; How do I have more than one condition in a if statement without using a progn?
+
+      (progn 
+
+	(funcall success)
+
+	(if (not (eq nil failure))
+
+	    (funcall failure)))))
+
 
 (setup-initial)
