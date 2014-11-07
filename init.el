@@ -1,5 +1,7 @@
 (defun setup-initial ()
 
+  (load "~/.emacs.d/utils.el")
+  
   ;; Set custom theme path so I can load the theme
   
   (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
@@ -22,7 +24,7 @@
   
   ;; Disable noise
   
-  (setq ring-bell-fucntion 'ignore)
+  (setq ring-bell-function 'ignore)
 
   ;; Stop flashing cursor - hopefully
 
@@ -52,7 +54,7 @@
 
   (global-linum-mode 1)
   
-  (setup-pacakges)
+  (setup-packages)
 
   (setup-autocomplete)
 
@@ -62,7 +64,7 @@
 
   (setup-org))
 
-(defun setup-pacakges ()
+(defun setup-packages ()
 
   ;; Require the "package" package for the package manager
   
@@ -130,7 +132,7 @@
 
 ;; (defun setup-clang-async-complete ()
 
-;;   (setq ac-clang-complete-execu	talbe "~/.emacs.d/
+;;   (setq ac-clang-complete-executable "~/.emacs.d/
 
 (defun setup-autocomplete-c ()
 
@@ -154,7 +156,7 @@
 
 	 ;; Revise this later
 	     
-	 (add-to-list 'achead:include-directories '"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.0/include")))
+	 (add-to-list 'achead:include-directories '"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.0/include"))))
 
 (defun setup-autocomplete-go ()
 
@@ -261,23 +263,5 @@
       (when (looking-at "^    ")
 	
         (replace-match "")))))
-
-
-(defun isOSX (success &optional failure)
-
-  "Checks if on osx then takes a function or a optional alternative thing to do"
-
-  (if (eq 'system-type 'darwin)
-
-      ;; How do I have more than one condition in a if statement without using a progn?
-
-      (progn 
-
-	(funcall success)
-
-	(if (not (eq nil failure))
-
-	    (funcall failure)))))
-
 
 (setup-initial)
