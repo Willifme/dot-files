@@ -1,14 +1,15 @@
-(defun isOSX (&optional success &optional failure)
+(defun isOSX (success &optional failure)
 
   "Checks if on osx then takes a function or a optional alternative thing to do"
 
-  (if (eq system-type 'darwin)
+  ;; If is OSX call the success function
 
-      ;; How do I have more than one condition in a if statement without using a prog 
-       (progn 
+  (if (eq system-type 'darwin)
 
        	(funcall success)
 
-       	(if (not (eq nil failure))
+    ;; Else if failure is not nil call it
 
-       	    (funcall failure)))))
+    (if (not (eq nil failure))
+
+	(funcall failure))))
