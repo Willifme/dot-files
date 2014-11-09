@@ -4,7 +4,6 @@
 
   ;; If is OSX call the success function
 
-<<<<<<< HEAD
   (if (eq system-type 'darwin)
 
        	(funcall success)
@@ -14,13 +13,3 @@
     (if (not (eq nil failure))
 
 	(funcall failure))))
-=======
-       	(funcall success)
-
-    (if (not (eq nil failure))
-
-	(funcall failure))))
-       	;; (if (not (eq nil failure))
-
-       	;;     (print "not called")))))
->>>>>>> e79d20ab289caeec82dca9aae15cda5daad35fdb
