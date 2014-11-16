@@ -1,9 +1,14 @@
+<<<<<<< HEAD
+((("statements" .
+   [1 0 0 0 0 0 0 0 0 0])
+=======
 ((("load" .
    [1 0 0 0])
   ("isOSX" .
    [0 0 0 1 0])
   ("go-mode-autoloads" .
    [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+>>>>>>> e79d20ab289caeec82dca9aae15cda5daad35fdb
   ("callf" .
    [0 0 0 0 1])
   ("ca" .
@@ -153,7 +158,11 @@
   ("output" .
    [1 0 0 0 0 0])
   ("print" .
+<<<<<<< HEAD
+   [18 0 0 0 0])
+=======
    [22 0 0 0 0])
+>>>>>>> e79d20ab289caeec82dca9aae15cda5daad35fdb
   ("define" .
    [12 0 0 0 0 0])
   ("Main" .
@@ -207,7 +216,11 @@
   ("require" .
    [5 0 0 0 0 1 0])
   ("setq" .
+<<<<<<< HEAD
+   [9 0 1 0])
+=======
    [10 0 1 0])
+>>>>>>> e79d20ab289caeec82dca9aae15cda5daad35fdb
   ("eval-after-load" .
    [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0])
   ("include" .
@@ -229,7 +242,11 @@
   ("ovectorlength" .
    [0 0 0 0 2 0 0 0 0 0 0 0 0])
   ("NULL" .
+<<<<<<< HEAD
+   [17 0 0 4])
+=======
    [17 0 0 2])
+>>>>>>> e79d20ab289caeec82dca9aae15cda5daad35fdb
   ("string" .
    [7 0 0 0 0 0])
   ("input" .
@@ -237,7 +254,11 @@
   ("ovector" .
    [1 0 2 0 0 0 0])
   ("printf" .
+<<<<<<< HEAD
+   [38 0 0 0 0 1])
+=======
    [37 0 0 0 0 1])
+>>>>>>> e79d20ab289caeec82dca9aae15cda5daad35fdb
   ("erroffset" .
    [0 0 1 4 2 0 0 0 0])
   ("OVERCOUNT" .
@@ -249,13 +270,21 @@
   ("font-lock-operator" .
    [0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 1 0 0])
   ("nil" .
+<<<<<<< HEAD
+   [3 0 0])
+=======
    [2 0 0])
+>>>>>>> e79d20ab289caeec82dca9aae15cda5daad35fdb
   ("mo" .
    [1 0])
   ("auto-complete-clang-async" .
    [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
   ("defun" .
+<<<<<<< HEAD
+   [16 0 0 0 0])
+=======
    [15 0 0 0 0])
+>>>>>>> e79d20ab289caeec82dca9aae15cda5daad35fdb
   ("ac-cc-mode-setup" .
    [0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0])
   ("ac-sources" .
@@ -359,7 +388,11 @@
   ("Node" .
    [13 0 0 0])
   ("node" .
+<<<<<<< HEAD
+   [8 0 0 0])
+=======
    [6 0 0 0])
+>>>>>>> e79d20ab289caeec82dca9aae15cda5daad35fdb
   ("Hello" .
    [0 0 1 0 0])
   ("()" .
@@ -385,7 +418,11 @@
   ("right" .
    [6 0 0 0 1])
   ("expression" .
+<<<<<<< HEAD
+   [16 0 0 1 0 0 0 0 0 0])
+=======
    [15 0 0 1 0 0 0 0 0 0])
+>>>>>>> e79d20ab289caeec82dca9aae15cda5daad35fdb
   ("deleteNode" .
    [2 0 0 0 0 0 0 0 0 0])
   ("deleteExpression" .
@@ -455,7 +492,11 @@
   ("T_QUIT" .
    [1 0 0 0 0 0])
   ("statement" .
+<<<<<<< HEAD
+   [2 0 0 0 0 0 1 0 0])
+=======
    [2 0 0 0 0 0 0 0 0])
+>>>>>>> e79d20ab289caeec82dca9aae15cda5daad35fdb
   ("T_DOUBLEQOUTE" .
    [1 0 0 0 1 0 0 0 0 0 0 0 0])
   ("T_IDENTIFIER" .
@@ -474,6 +515,16 @@
    [1 0 0 0 0])
   ("strcmp" .
    [1 0 0 0 0 0])
+<<<<<<< HEAD
+  ("not" .
+   [1 0 0])
+  ("eq" .
+   [1 0])
+  ("failure" .
+   [2 0 0 0 0 0 0])
+  ("funcall" .
+   [1 0 0 0 0 0 0])))
+=======
   ("define-key" .
    [1 0 0 0 0 0 0 0 0 0])
   ("input-decode-map" .
@@ -494,3 +545,4 @@
    [0 0 1 1 0 0 0 0 0 0 0])
   ("&optional" .
    [1 0 0 0 0 0 0 0 0])))
+>>>>>>> e79d20ab289caeec82dca9aae15cda5daad35fdb
