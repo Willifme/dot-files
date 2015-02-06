@@ -1,14 +1,31 @@
 (defun setup-initial ()
-
+ 
   (load "~/.emacs.d/utils.el")
-  
+ 
+  ;; Have better buffer switching
+  (ido-mode 1)
+ 
   ;; Set custom theme path so I can load the theme
   
   (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-  
-  ;; Load emacs theme (zenburn)
 
-  (load-theme 'zenburn t)
+  ;; Hide menu bar
+  (menu-bar-mode 0)
+
+  ;; Hide tool bar
+  (tool-bar-mode 0)
+
+  ;; Set to have a transparent background
+ ;; (set-frame-parameter (selected-frame) 'alpha '(88 70))
+ 
+  ;; Set tab width to be 4 spaces
+  (setq-default indent-tabs-mode nil)
+
+  (setq-default tab-width 4)
+ 
+  ;; Load emacs theme (hipster)
+
+  (load-theme 'hipster t)
 
   ;; Disable start screen
   
@@ -62,6 +79,8 @@
 
   (setup-lisp)
 
+  (setup-ocaml)
+
   (setup-org))
 
 (defun setup-packages ()
@@ -72,8 +91,8 @@
 
   ;; Add package manager archives
   
-  (setq package-archive
-	'(("marmalade" . "http://marmalade-repo.rg/packages/")
+  (setq package-archives
+	'(("marmalade" . "http://marmalade-repo.org/packages/")
 	  ("elpa" . "http://tromey.com/elpa/")
 	  ("melpa" . "http://melpa.milkbox.net/packages/")
 	  ("gnu" . "http://elpa.gnu.org/packages/")))
@@ -81,6 +100,10 @@
   ;; Initialise the package manager
   
   (package-initialize)
+
+  (require 'evil)
+
+  (evil-mode 1)
 
   ;; Referesh packages
   (unless package-archive-contents
@@ -113,6 +136,12 @@
   ;; Load default autocomplete config
 
   (ac-config-default)
+
+  (global-auto-complete-mode t)
+
+  (setq ac-auto-show-menu 0)
+
+  (setq ac-show-menu-immediately-on-auto-complete t)
   
   ;; Set default ac dictionary location
   
@@ -183,10 +212,16 @@
 
 (defun setup-ui ()
 
+  ;; Show time on powerline
+  (display-time)
+
   ;; Require powerline
   (require 'powerline)
 
   (powerline-default-theme)
+
+  ;; Bind Ctrl-P to do fuzzy file search
+  (global-set-key (kbd "C-x p") 'fiplr-find-file)
 
   ;; For better indentation (I think) 
 
@@ -220,6 +255,44 @@
   ;;   ;; Set lisp system 
 
   ;;   (load (expand-file-name "~/quicklisp/slime-helper.el"))))
+
+(defun setup-ocaml ()
+
+  ;; Load tuareg - OCaml for Emacs
+
+  (add-to-list 'load-path "~/.emacs.d/elpa/tuareg")
+
+  ;; Have tuareg auto-load when appropiate
+
+  (autoload 'tuareg-mode "tuareg" "Major mode for editing Caml code" t)
+
+  ;; Load tuareg-mode when the correct file extension is found
+
+  (setq auto-mode-alist
+
+	(append '(("\\.ml[ily]?$" . tuareg-mode)
+
+		  ("\\.topml$" . tuareg-mode))
+
+		auto-mode-alist))
+
+  ;; Clear things 
+
+  (setq opam-share (substring (shell-command-to-string "opam config var share 2> /dev/null") 0 -1))
+
+  (add-to-list 'load-path (concat opam-share "/emacs/site-lisp"))
+
+  ;; Load merlin mode
+
+  (require 'merlin)
+
+  ;; When tuareg-mode loads load merlin-mode
+
+  (add-hook 'tuareg-mode 'merlin-mode)
+
+  ;; Merlin now uses auto-complete for completion
+
+  (setq merlin-use-auto-complete-mode 'easy))
 
 (defun setup-org ()
   

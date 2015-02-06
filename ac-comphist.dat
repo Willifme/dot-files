@@ -1,548 +1,298 @@
-<<<<<<< HEAD
-((("statements" .
-   [1 0 0 0 0 0 0 0 0 0])
-=======
-((("load" .
-   [1 0 0 0])
-  ("isOSX" .
-   [0 0 0 1 0])
-  ("go-mode-autoloads" .
-   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
->>>>>>> e79d20ab289caeec82dca9aae15cda5daad35fdb
-  ("callf" .
-   [0 0 0 0 1])
-  ("ca" .
-   [1 0])
-  ("fi" .
-   [1 0])
-  ("define-generic-mode" .
-   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
-  ("generic-x" .
+((("ido-mode" .
+   [1 0 0 0 0 0 0 0])
+  ("menu-bar-mode" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("tool-bar-mode" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0])
+  ("alpha" .
+   [3 0 0 2 0])
+  ("selected-frame" .
+   [0 0 0 0 0 0 0 2 1 0 1 0 0 0])
+  ("set-frame-parameter" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 3 1 0 0 0 0])
+  ("ANSI_COLOUR_GREEN" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("log_warning" .
+   [0 0 0 1 0 0 0 0 0 0 0])
+  ("log_error" .
+   [2 0 0 0 0 1 0 0 0])
+  ("LOG_ERROR" .
    [0 0 0 0 0 1 0 0 0])
-  ("defconst" .
-   [1 0 0 0 0 0 0 0])
-  ("make-keymap" .
-   [0 0 0 0 0 0 0 1 0 0 0])
-  ("sol-mode-map" .
-   [1 0 0 0 0 0 0 0 0 0 0 0])
-  ("let" .
-   [1 0 0])
-  ("defvar" .
-   [2 0 0 0 0 0])
-  ("yylval.integer" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("T_DIVIDE" .
-   [1 0 0 0 0 0 0 0])
-  ("memmove" .
-   [1 0 0 0 0 0 0])
-  ("strlen" .
-   [2 0 0 0 0 0])
-  ("yylineno" .
-   [1 0 0 0 0 0 0 0])
-  ("Println" .
-   [1 0 0 0 0 0 0])
-  ("lambda" .
-   [1 0 0 0 0 0])
-  ("insert" .
-   [3 0 0 0 0 0])
-  ("zopen" .
-   [1 0 0 0 1])
-  ("(Node *left, Node *right, BinaryOperationTypes operatorValue)" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("makeBinaryOperator" .
-   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
-  ("makeInt" .
-   [6 0 0 0 0 0 0])
-  ("PLUS" .
-   [3 0 0 0])
-  ("operator" .
-   [3 0 0 0 0 0 0 0])
-  ("BinaryOperator" .
-   [0 0 0 0 0 0 1 0 0 0 0 0 0 0])
-  ("String" .
-   [1 0 0 0 0 0])
-  ("Number" .
-   [1 0 0 0 0 0])
-  ("BinaryOperationTypes" .
-   [0 0 0 2 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("WUNTRACED" .
-   [0 0 0 0 0 0 0 0 1])
-  ("GetBooks" .
-   [1 0 0 0 0 0 0 0])
-  ("params" .
-   [2 0 0 0 0 0])
-  ("martini" .
-   [3 0 0 0 0 0 0])
-  ("Int" .
-   [3 0 0])
-  ("malloc" .
-   [1 0 0 0 0 0])
-  ("number_int" .
-   [2 0 0 0 0 0 0 0 0 0])
-  ("this" .
-   [1 0 0 0])
-  ("TOKEN" .
-   [12 0 0 0 0])
-  ("null" .
-   [1 0 0 0])
-  ("false" .
-   [1 0 0 0 0])
-  ("true" .
-   [1 0 0 0])
-  ("VERSION" .
-   [0 0 1 0 0 0 0])
-  ("list" .
-   [2 0 0 0])
-  ("list-test" .
-   [1 0 0 0 0 0 0 0 0])
-  ("listp" .
-   [0 0 0 0 2])
-  ("func" .
-   [5 0 0 0])
-  ("println" .
-   [5 0 0 0 0 0 0])
-  ("add" .
-   [1 0 0])
-  ("numer" .
-   [1 0 0 0 0])
-  ("HELLO" .
-   [0 0 0 0 1])
-  ("yylval.sval" .
-   [1 0 0 0 0 0 0 0 0 0 0])
-  ("yylval.token" .
-   [0 0 0 0 0 0 0 1 0 0 0 0])
-  ("(FILE *)" .
-   [0 0 0 0 0 0 0 1])
-  ("feof" .
-   [0 0 1 0])
-  ("file" .
-   [4 0 0 0])
-  ("test" .
-   [7 0 0 0])
-  ("(" .
-   [1])
-  ("sprintf" .
-   [0 0 1 0 0 0 0])
-  ("short" .
-   [0 1 0 0 0])
-  ("debug-on-error" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("ac-source-clang-async" .
-   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
-  ("setq-default" .
-   [0 0 0 0 0 1 0 0 0 0 0 0])
-  ("a" .
-   [1])
-  ("ac-config-default" .
-   [0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0])
-  ("ac-clang-complete-executable" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("powerline-default-theme" .
-   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
-  ("c-mode-common-hook" .
-   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("ac-common-setup" .
-   [0 0 0 0 0 0 0 0 1 0 0 1 1 0 0])
-  ("auto-complete-mode-hook" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
-  ("add-hook" .
-   [0 0 0 0 2 0 0 0])
-  ("m" .
-   [2])
-  ("filename" .
-   [0 0 0 0 1 0 0 0])
-  ("def" .
-   [3 0 0])
-  ("d" .
-   [2])
-  ("output" .
-   [1 0 0 0 0 0])
-  ("print" .
-<<<<<<< HEAD
-   [18 0 0 0 0])
-=======
-   [22 0 0 0 0])
->>>>>>> e79d20ab289caeec82dca9aae15cda5daad35fdb
-  ("define" .
-   [12 0 0 0 0 0])
-  ("Main" .
-   [1 0 0 0])
-  ("Test" .
-   [8 0 0 0])
-  ("hello" .
-   [11 0 0 0 0])
-  ("switch" .
-   [0 0 0 0 0 1])
-  ("rc" .
-   [5 0])
-  ("regex_test" .
-   [1 0 0 0 0 0 0 0 0 0])
-  ("OVECCOUNT" .
-   [0 0 5 0 0 0 0 0 0])
-  ("exit" .
-   [3 0 0 0])
-  ("msgbuf" .
-   [2 0 0 0 0 0])
-  ("msgbug" .
-   [0 0 0 1 0 0])
-  ("stderr" .
-   [1 0 0 0 0 0])
+  ("LOG_WARNING" .
+   [0 0 0 0 1 1 0 0 0 0 0])
+  ("__LINE__" .
+   [0 0 0 3 0 0 0 0])
+  ("__FILE__" .
+   [0 0 0 0 3 0 0 0])
+  ("__VA_ARGS__" .
+   [0 0 0 1 1 1 0 0 0 0 0])
+  ("ANSI_COLOUR_RESET" .
+   [0 0 3 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("ANSI_COLOUR_YELLOW" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
   ("fprintf" .
-   [1 0 0 0 0 0 0])
-  ("puts" .
-   [3 0 0 0])
-  ("reti" .
-   [6 0 0 0])
-  ("err" .
-   [2 0 0])
-  ("regex" .
-   [21 0 0 0 1])
-  ("regex_t" .
-   [0 0 0 1 0 0 1])
-  ("regex_text" .
-   [0 0 0 0 0 0 1 0 0 0])
-  ("error_messsage" .
-   [0 0 0 1 0 1 0 0 0 0 0 0 0 0])
-  ("MAX_ERROR_MSG" .
-   [0 0 0 1 1 0 0 0 0 0 0 0 0])
-  ("status" .
-   [2 0 0 0 0 0])
-  ("while" .
-   [0 0 0 1 0])
-  ("yas-global-mode" .
-   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("yasnippet" .
-   [0 0 0 1 0 0 0 0 0])
-  ("require" .
-   [5 0 0 0 0 1 0])
-  ("setq" .
-<<<<<<< HEAD
-   [9 0 1 0])
-=======
-   [10 0 1 0])
->>>>>>> e79d20ab289caeec82dca9aae15cda5daad35fdb
-  ("eval-after-load" .
-   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0])
-  ("include" .
-   [22 0 0 0 1 0 0])
-  ("float" .
-   [0 0 0 1 1])
-  ("add-to-list" .
-   [0 0 0 0 0 0 2 0 0 0 0])
-  ("main" .
-   [14 0 1 0])
-  ("pcre" .
-   [4 0 0 0])
-  ("reCompiled" .
-   [0 0 3 1 0 0 0 0 0 0])
-  ("error" .
-   [11 0 0 0 0])
-  ("result" .
-   [2 0 0 0 0 1])
-  ("ovectorlength" .
-   [0 0 0 0 2 0 0 0 0 0 0 0 0])
-  ("NULL" .
-<<<<<<< HEAD
-   [17 0 0 4])
-=======
-   [17 0 0 2])
->>>>>>> e79d20ab289caeec82dca9aae15cda5daad35fdb
-  ("string" .
-   [7 0 0 0 0 0])
+   [3 0 0 0 0 0 0])
   ("input" .
-   [9 0 1 0 0])
-  ("ovector" .
-   [1 0 2 0 0 0 0])
-  ("printf" .
-<<<<<<< HEAD
-   [38 0 0 0 0 1])
-=======
-   [37 0 0 0 0 1])
->>>>>>> e79d20ab289caeec82dca9aae15cda5daad35fdb
-  ("erroffset" .
-   [0 0 1 4 2 0 0 0 0])
-  ("OVERCOUNT" .
-   [0 0 1 0 0 0 0 0 0])
-  ("pcre_compile" .
-   [1 0 0 0 0 0 0 0 0 0 0 0])
-  ("keywords" .
-   [1 0 0 0 0 0 0 0])
-  ("font-lock-operator" .
-   [0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 1 0 0])
+   [6 0 0 0 0])
+  ("ANSI_COLOUR_" .
+   [0 0 0 0 0 0 0 0 0 0 0 1])
+  ("ANSI_COLOUR_RED" .
+   [0 0 1 1 1 0 0 0 0 0 0 0 0 0 0])
+  ("ifndef" .
+   [1 0 0 0 0 0])
+  ("tab-width" .
+   [0 0 0 0 0 1 0 0 0])
   ("nil" .
-<<<<<<< HEAD
-   [3 0 0])
-=======
-   [2 0 0])
->>>>>>> e79d20ab289caeec82dca9aae15cda5daad35fdb
-  ("mo" .
-   [1 0])
-  ("auto-complete-clang-async" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
-  ("defun" .
-<<<<<<< HEAD
-   [16 0 0 0 0])
-=======
-   [15 0 0 0 0])
->>>>>>> e79d20ab289caeec82dca9aae15cda5daad35fdb
-  ("ac-cc-mode-setup" .
-   [0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0])
-  ("ac-sources" .
-   [0 0 0 1 1 0 1 0 0 0])
-  ("argc" .
-   [1 0 0 0])
-  ("fopen" .
-   [2 0 0 0 0])
-  ("argv" .
-   [1 0 0 0])
-  ("extern" .
-   [0 0 0 1 0 0])
-  ("FILE" .
-   [3 0 0 0])
-  ("type" .
-   [7 0 1 0])
-  ("VTYPE" .
-   [3 0 0 0 0])
-  ("yytext" .
-   [3 0 0 1 0 0])
-  ("Handle" .
-   [1 0 0 0 0 0])
-  ("TYPE" .
-   [23 0 0 0])
-  ("NUMBER" .
-   [2 0 0 0 0 0])
-  ("[0-9]+" .
-   [1 0 0 0 1 0])
-  ("yyin" .
-   [5 1 0 0])
-  ("strncmp" .
-   [0 0 0 0 0 1 0])
-  ("(const char *, const char *, size_t)" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("stdin" .
-   [1 0 0 0 1])
-  ("value" .
-   [38 1 0 0 0])
-  ("return" .
-   [23 0 0 0 0 0])
-  ("typeof" .
-   [1 1 0 0 0 0])
-  ("dirtree" .
-   [1 0 0 0 0 0 0])
-  ("i" .
-   [2])
-  ("end" .
-   [5 0 0])
-  ("loop" .
-   [1 0 0 0])
-  ("read-from-minibuffer" .
-   [0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0])
-  ("equal" .
-   [3 0 0 0 0])
-  ("name" .
-   [2 0 0 0])
-  ("do" .
-   [5 0])
-  ("if" .
-   [4 0])
-  ("s" .
-   [2])
-  ("answer" .
-   [1 0 0 0 0 0])
-  ("progn" .
-   [4 0 0 0 0])
-  ("y-or-n-p" .
-   [0 0 2 0 0 0 0 0])
-  ("format" .
-   [4 0 0 0 0 0])
-  ("doge" .
-   [3 0 0 0])
-  ("set" .
    [1 0 0])
-  ("const" .
-   [0 0 1 0 0])
-  ("yylex" .
-   [1 0 0 0 0])
-  ("stdout" .
-   [2 0 0 0 0 0])
-  ("n]+" .
-   [1 0 0])
-  ("Eat" .
-   [1 0 0])
-  ("whitespace" .
-   [1 0 0 0 0 0 0 0 0 0])
-  ("EXIT_FAILURE" .
-   [0 0 1 0 0 0 1 0 0 0 0 0])
-  ("load-path" .
-   [0 0 0 0 0 0 1 0 0])
-  ("neotree" .
-   [1 0 0 0 0 0 0])
-  ("kbd" .
-   [1 0 0])
-  ("EXIT_SUCCESS" .
-   [0 0 1 0 0 1 0 0 0 0 0 0])
-  ("%option" .
-   [1 0 0 0 0 0 0])
-  ("yytext[0]" .
-   [0 0 0 0 0 0 0 1 0])
-  ("Node" .
-   [13 0 0 0])
-  ("node" .
-<<<<<<< HEAD
-   [8 0 0 0])
-=======
-   [6 0 0 0])
->>>>>>> e79d20ab289caeec82dca9aae15cda5daad35fdb
-  ("Hello" .
-   [0 0 1 0 0])
-  ("()" .
-   [0 1])
-  ("free" .
-   [4 0 0 0])
-  ("go-autocomplete" .
-   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
-  ("auto-complete-config" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0])
-  ("fmt" .
-   [2 0 0])
-  ("yylval.ival" .
-   [1 0 0 0 0 0 0 0 0 0 0])
-  ("Expression" .
-   [26 0 0 0 0 0 0 0 0 0])
-  ("left" .
-   [10 0 0 0])
-  ("makeNode" .
-   [1 0 0 0 0 0 0 0])
-  ("newInt" .
-   [1 0 0 0 0 0])
-  ("right" .
-   [6 0 0 0 1])
-  ("expression" .
-<<<<<<< HEAD
-   [16 0 0 1 0 0 0 0 0 0])
-=======
-   [15 0 0 1 0 0 0 0 0 0])
->>>>>>> e79d20ab289caeec82dca9aae15cda5daad35fdb
-  ("deleteNode" .
-   [2 0 0 0 0 0 0 0 0 0])
-  ("deleteExpression" .
-   [3 0 0 0 0 0 0 0 1 1 0 0 0 0 0 1])
+  ("indent-tabs-mode" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("setq-default" .
+   [0 0 0 0 0 0 0 1 1 0 0 0])
+  ("protected" .
+   [0 0 0 1 0 0 0 0 0])
   ("operation" .
-   [4 0 0 0 0 0 0 0 0])
-  ("binaryOperator" .
-   [0 1 2 3 1 0 0 0 0 0 0 0 0 1])
-  ("(Expression *expression)" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3])
-  ("deleteBinaryOperation" .
-   [1 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0])
-  ("(Expression *operation)" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2])
-  ("makeBinaryOperation" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("printExpression" .
-   [3 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("(Expression *left, Expression *right, BinaryOperationTypes operatorValue)" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("MINUS" .
-   [2 0 0 0 0])
-  ("TIMES" .
-   [1 0 0 0 0])
-  ("DIVIDE" .
-   [1 0 0 0 0 0])
-  ("681.50" .
-   [1 0 0 0 0 0])
-  ("1/8" .
-   [1 0 0])
-  ("6/8" .
-   [1 0 0])
-  ("3/4" .
-   [1 0 0])
-  ("zenburn" .
-   [1 0 0 0 0 0 0])
-  ("jit" .
-   [1 0 0])
-  ("jit_function_t" .
-   [1 0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("context" .
-   [2 0 0 0 0 0 0])
-  ("jit_type_int" .
-   [2 0 0 0 1 0 0 0 0 0 0 0])
-  ("jit_type_t" .
-   [1 0 0 0 0 0 0 0 0 0])
-  ("signature" .
-   [1 0 0 0 0 1 0 0 0])
-  ("jit_value_get_param" .
-   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("T_NEWLINE" .
-   [1 0 0 0 0 0 0 0 0])
-  ("add_history" .
-   [0 0 0 0 1 0 0 0 0 0 0])
-  ("yy_scan_string" .
-   [0 0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("yyparse" .
-   [1 0 0 0 0 0 0])
+   [1 0 1 0 0 0 0 0 0])
+  ("private" .
+   [3 0 0 0 0 0 0])
+  ("NodeType" .
+   [3 0 0 0 0 0 0 0])
+  ("BinOpType" .
+   [1 0 0 1 1 1 0 0 0])
+  ("cout" .
+   [2 0 0 0])
+  ("std" .
+   [3 0 0])
+  ("Integer" .
+   [8 0 0 0 0 0 0])
+  ("virtual" .
+   [4 0 0 0 0 0 0])
+  ("public" .
+   [10 0 0 0 0 0])
+  ("class" .
+   [3 0 0 0 0])
+  ("getAstNodeTypeString" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
   ("continue" .
    [0 0 0 0 1 0 0 0])
-  ("start" .
-   [1 0 0 0 0])
-  ("and" .
-   [1 0 0])
-  ("T_COMMENT" .
+  ("buffer" .
+   [2 0 0 0 0 0])
+  ("stderr" .
+   [4 0 0 0 0 0])
+  ("msg" .
+   [2 0 0])
+  ("args" .
+   [3 0 0 0])
+  ("fmt" .
+   [4 0 0])
+  ("tabbedOutput" .
+   [0 0 0 1 0 0 0 0 0 0 0 0])
+  ("getBinaryOperationChar" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("DIVIDE" .
+   [1 0 0 1 0 0])
+  ("MINUS" .
+   [3 0 0 0 0])
+  ("switch" .
+   [0 0 0 1 0 0])
+  ("BinaryOperationType" .
+   [1 0 0 1 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("TIMES" .
+   [3 0 0 0 0])
+  ("s" .
+   [2])
+  ("indent" .
+   [61 0 0 0 0 0])
+  ("finalIndent" .
+   [4 0 2 2 6 7 1 0 0 0 0])
+  ("BinaryOperation" .
+   [0 0 0 1 4 3 2 0 0 0 0 0 0 0 0])
+  ("character" .
    [3 0 0 0 0 0 0 0 0])
-  ("T_QUIT" .
-   [1 0 0 0 0 0])
-  ("statement" .
-<<<<<<< HEAD
-   [2 0 0 0 0 0 1 0 0])
-=======
-   [2 0 0 0 0 0 0 0 0])
->>>>>>> e79d20ab289caeec82dca9aae15cda5daad35fdb
-  ("T_DOUBLEQOUTE" .
-   [1 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("T_IDENTIFIER" .
-   [2 0 0 0 1 1 0 1 0 0 0 0])
-  ("$$" .
-   [1 0])
-  ("$1" .
-   [1 0])
-  ("token" .
-   [1 0 0 0 0])
-  ("$2" .
-   [1 0])
-  ("T_INT" .
-   [1 0 0 0 0])
-  ("[0-9]" .
-   [1 0 0 0 0])
-  ("strcmp" .
-   [1 0 0 0 0 0])
-<<<<<<< HEAD
-  ("not" .
-   [1 0 0])
-  ("eq" .
-   [1 0])
-  ("failure" .
-   [2 0 0 0 0 0 0])
-  ("funcall" .
-   [1 0 0 0 0 0 0])))
-=======
-  ("define-key" .
-   [1 0 0 0 0 0 0 0 0 0])
-  ("input-decode-map" .
-   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
-  ("S-up" .
-   [0 0 1 0])
-  ("meta" .
-   [1 0 0 0])
-  ("windmove-default-keybindings" .
-   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("control" .
+  ("node" .
+   [57 0 0 0])
+  ("makeInteger" .
+   [2 0 0 0 1 5 7 1 0 0 0])
+  ("Boolean" .
    [1 0 0 0 0 0 0])
-  ("interactive" .
-   [1 0 0 0 0 0 0 1 0 0 0])
-  ("interactive-p" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("yes-or-no-p" .
-   [0 0 1 1 0 0 0 0 0 0 0])
-  ("&optional" .
-   [1 0 0 0 0 0 0 0 0])))
->>>>>>> e79d20ab289caeec82dca9aae15cda5daad35fdb
+  ("malloc" .
+   [4 0 0 0 0 0])
+  ("newNull" .
+   [7 0 0 0 0 0 0])
+  ("makeEmptyExpression" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("makeNullExpression" .
+   [0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0])
+  ("Expression" .
+   [35 0 0 0 0 0 0 0 0 0])
+  ("merlin-use-auto-complete-mode" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("tuareg-mode" .
+   [0 0 1 2 0 0 0 0 0 0 0])
+  ("append" .
+   [1 0 0 0 0 0])
+  ("auto-mode-alist" .
+   [0 0 0 0 0 0 0 0 0 1 1 0 0 0 0])
+  ("setq" .
+   [4 0 0 0])
+  ("once" .
+   [1 0 0 0])
+  ("c" .
+   [3])
+  ("free" .
+   [6 0 0 0])
+  ("string" .
+   [1 0 0 0 0 0])
+  ("$$" .
+   [2 0])
+  ("printf" .
+   [47 0 0 0 0 0])
+  ("T_NULL" .
+   [3 0 0 0 0 0])
+  ("makeBooleanExpression" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("$1" .
+   [2 0])
+  ("newBoolean" .
+   [0 0 0 0 1 1 0 0 0 0])
+  ("boolean" .
+   [10 0 0 0 0 0 0])
+  ("value" .
+   [24 0 0 0 0])
+  ("NULL" .
+   [17 0 0 1])
+  ("print" .
+   [15 0 0 0 0])
+  ("expression" .
+   [36 0 1 3 0 1 1 0 0 0])
+  ("false" .
+   [2 0 0 0 0])
+  ("true" .
+   [5 0 0 0])
+  ("e" .
+   [1])
+  ("defun" .
+   [1 0 0 0 0])
+  ("setup-ocaml" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("add-to-list" .
+   [2 0 0 0 0 0 0 0 0 0 0])
+  ("load-path" .
+   [1 0 0 0 0 0 0 0 0])
+  ("add-hook" .
+   [1 0 0 0 0 0 0 0])
+  ("merlin-mode" .
+   [0 0 0 0 1 0 0 0 0 0 0])
+  ("ac-auto-show-menu" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("ac-show-menu-immediately-on-auto-complete" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("Null" .
+   [4 0 0 0])
+  ("null" .
+   [6 0 0 0])
+  ("newExpression" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("t" .
+   [6])
+  ("define" .
+   [14 0 0 0 0 0])
+  ("Value" .
+   [1 0 0 0 0])
+  ("include" .
+   [6 0 0 0 0 0 0])
+  ("AstNodeType" .
+   [3 0 1 0 1 0 0 2 0 0 0])
+  ("type" .
+   [21 0 0 0])
+  ("Node" .
+   [45 0 0 0])
+  ("token" .
+   [2 0 0 0 0])
+  ("integer" .
+   [15 0 0 0 0 0 0])
+  ("binOperation" .
+   [4 0 0 3 2 0 0 0 0 0 0 0])
+  ("makeBinaryOperation" .
+   [2 0 0 0 1 8 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("PLUS" .
+   [7 0 0 0])
+  ("deleteNode" .
+   [6 0 0 0 0 0 0 0 0 0])
+  ("deleteExpression" .
+   [3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("printExpression" .
+   [5 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("makeExpression" .
+   [5 0 0 0 0 0 2 0 0 0 0 0 0 0])
+  ("n" .
+   [25])
+  ("makeNode" .
+   [6 0 0 0 0 0 0 0])
+  ("makeExpressionNode" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("printNode" .
+   [5 0 0 0 0 0 0 0 0])
+  ("d" .
+   [2])
+  ("right" .
+   [7 0 0 0 0])
+  ("left" .
+   [12 0 0 0])
+  ("i" .
+   [15])
+  ("ifdef" .
+   [8 0 0 0 0])
+  ("DEBUG" .
+   [7 0 0 0 0])
+  ("endif" .
+   [8 0 0 0 0])
+  ("log_info" .
+   [10 0 0 1 2 0 0 0])
+  ("Character" .
+   [1 0 0 0 0 0 0 0 0])
+  ("makeCharacter" .
+   [0 0 0 0 0 1 3 0 2 0 0 0 0])
+  ("TYPE_NUMBER" .
+   [0 0 0 0 1 0 0 0 0 0 0])
+  ("TYPE_INTEGER" .
+   [1 0 0 0 0 1 0 0 0 0 0 0])
+  ("TYPE_CHAR" .
+   [4 0 0 0 0 0 0 0 0])
+  ("TYPE_BINARYOPERATION" .
+   [0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("require" .
+   [1 0 0 0 0 0 0])
+  ("evil" .
+   [1 0 0 0])
+  ("evil-mode" .
+   [1 0 0 0 0 0 0 0 0])
+  ("newIndent" .
+   [2 0 0 0 0 1 0 0 0])
+  ("bool" .
+   [1 0 0 0])
+  ("finsihedBinOpRight" .
+   [0 0 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("finishedBinOpLeft" .
+   [1 0 0 3 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("AST_H" .
+   [2 0 0 0 0])
+  ("a" .
+   [1])
+  ("stdbool" .
+   [1 0 0 0 0 0 0])
+  ("Hipster" .
+   [0 0 0 0 1 0 0])
+  ("hipster" .
+   [0 0 0 1 0 0 0])
+  ("default-frame-alist" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("set" .
+   [1 0 0])
+  ("hello" .
+   [1 0 0 0 0])
+  ("main" .
+   [2 0 0 0])
+  ("man" .
+   [1 0 0])
+  ("display-time" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])))
