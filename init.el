@@ -25,7 +25,7 @@
  
   ;; Load emacs theme (hipster)
 
-  (load-theme 'hipster t)
+  (load-theme 'bubbleberry t)
 
   ;; Disable start screen
   
@@ -121,6 +121,9 @@
 
 (defun setup-autocomplete ()
 
+  ;; Load flycheck
+;;  (add-hook 'after-init-hook #'global-flycheck-mode)
+
   ;; Load auto-complete
 
   (add-to-list 'load-path "~/.emacs.d/elpa/auto-complete")
@@ -159,10 +162,6 @@
 
   (setup-autocomplete-go))
 
-;; (defun setup-clang-async-complete ()
-
-;;   (setq ac-clang-complete-executable "~/.emacs.d/
-
 (defun setup-autocomplete-c ()
 
   ;; Load auto-complete-c-headers
@@ -171,13 +170,6 @@
 
   (require 'auto-complete-c-headers)
 
-  ;; Not working fix later
-
-  ;;(require 'auto-complete-clang-async)
-  
-  (require 'google-c-style)
-
-  (add-hook 'c-mode-common-hook 'google-set-c-style)
   
   (add-to-list 'ac-sources 'ac-sources-c-headers)
 
@@ -212,13 +204,19 @@
 
 (defun setup-ui ()
 
-  ;; Show time on powerline
-  (display-time)
-
   ;; Require powerline
   (require 'powerline)
 
   (powerline-default-theme)
+
+  ;; Set default font
+  (set-face-attribute 'default nil :family "Inconsolata" 
+                      :height (case system-type
+                                ('gnu/linux 130)
+                                ('darwin 145)) :weight 'normal)
+
+  ;; Show time on powerline
+  (display-time)
 
   ;; Bind Ctrl-P to do fuzzy file search
   (global-set-key (kbd "C-x p") 'fiplr-find-file)
