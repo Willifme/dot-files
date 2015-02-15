@@ -81,6 +81,8 @@
 
   (setup-ocaml)
 
+  (setup-clojure)
+
   (setup-org))
 
 (defun setup-packages ()
@@ -210,6 +212,14 @@
 
 	      (setq indent-tabs-mode nil))))
 
+(defun setup-clojure ()
+
+  ;; Autoload paredit with clojure-mode
+  (add-hook 'clojure-mode-hook #'paredit-mode)
+
+  ;; Set an alias to start cider better
+  (defalias 'cider-start 'cider-jack-in))
+
 (defun setup-ui ()
 
   ;; Show time on powerline
@@ -225,7 +235,9 @@
 
   ;; For better indentation (I think) 
 
-  (global-set-key (kbd "<S-tab>") 'un-indent-by-removing-4-spaces))
+  (global-set-key (kbd "<S-tab>") 'un-indent-by-removing-4-spaces)
+  
+  (add-hook 'prog-mode-hook 'font-lock-comment-annotations))
 
 (defun setup-lisp ()
 

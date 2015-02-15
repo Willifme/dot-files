@@ -13,3 +13,9 @@
     (if (not (eq nil failure))
 
 	(funcall failure))))
+
+(defun font-lock-comment-annotations ()
+  "Highlight a bunch of well known comment annotations. this function should be added to the hooks of the major modes used for programming"
+  (font-lock-add-keywords
+   nil '(("\\<\\(FIX\\(ME\\)?\\|Todo\\|OPTIMISE\\|HACK\\|REFACTOR\\):"
+          1 font-lock-warning-face t))))
