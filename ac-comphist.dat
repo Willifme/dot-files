@@ -1,16 +1,66 @@
-((("funcall" .
-   [1 0 0 0 0 0 0])
-  ("filextension" .
-   [1 0 0 0 0 0 0 0 0 0 0 0])
-  ("auto-mode-list" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("add-to-list" .
+((("setup-org" .
+   [1 0 0 0 0 0 0 0 0])
+  ("setup-ocaml" .
    [1 0 0 0 0 0 0 0 0 0 0])
+  ("defun" .
+   [3 0 0 0 0])
+  ("&optional" .
+   [1 0 1 0 0 0 0 0 0])
+  ("s" .
+   [2])
   ("action" .
    [2 0 0 0 0 0])
-  ("s" .
-   [1])
-  ("&optional" .
-   [0 0 1 0 0 0 0 0 0])
-  ("defun" .
-   [1 0 0 0 0])))
+  ("add-to-list" .
+   [1 0 0 0 0 0 1 0 0 0 0])
+  ("auto-mode-list" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("filextension" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("funcall" .
+   [3 0 0 0 0 0 0])
+  ("setup-lisp" .
+   [2 0 0 0 0 0 0 0 0 0])
+  ("setup-clojure" .
+   [3 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("lazy-load-major-mode" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("mode" .
+   [3 0 0 0])
+  ("Autoload" .
+   [0 0 0 0 0 0 0 1])
+  ("name" .
+   [1 0 0 0])
+  ("description" .
+   [0 0 0 0 0 0 1 0 0 0 0])
+  ("auto-mode-alist" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0])
+  ("fileextension" .
+   [0 0 0 0 1 1 0 0 0 0 0 0 0])
+  ("lazy-load-major-mode-new" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("clojure-mode" .
+   [0 0 0 0 0 0 0 1 0 0 0 0])
+  ("success" .
+   [1 0 0 1 0 0 0])
+  ("failure" .
+   [3 0 0 0 0 0 0])
+  ("if" .
+   [2 0])
+  ("eq" .
+   [2 0])
+  ("system-type" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("not" .
+   [1 0 0])
+  ("nil" .
+   [1 0 0])
+  ("testOs" .
+   [1 0 0 0 0 0])
+  ("darwin" .
+   [1 0 0 0 0 0])
+  ("lambda" .
+   [2 0 0 0 0 0])
+  ("windmove-default-keybindings" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("meta" .
+   [1 0 0 0])))

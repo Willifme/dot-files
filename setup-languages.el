@@ -47,13 +47,13 @@
   (autoload 'tuareg-mode "tuareg" "Major mode for editing Caml code" t)
 
   ;; Load tuareg-mode when the correct file extension is found
-  (setq auto-mode-alist
+  ;; (setq auto-mode-alist
 
-	(append '(("\\.ml[ily]?$" . tuareg-mode)
+  ;;   (append '(("\\.ml[ily]?$" . tuareg-mode)
 
-		  ("\\.topml$" . tuareg-mode))
+  ;;   	  ("\\.topml$" . tuareg-mode))
 
-		auto-mode-alist))
+  ;;   	auto-mode-alist))
 
   ;; Clear things 
   (setq opam-share (substring (shell-command-to-string "opam config var share 2> /dev/null") 0 -1))

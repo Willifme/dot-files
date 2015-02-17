@@ -1,14 +1,25 @@
-(defun isOS (os success &optional failure)
+(defun isOSX (success &optional failure)
 
-  "Checks if it is the os then takes a function or a optional alternative thing to do"
+  "Checks if on osx then takes a function or a optional alternative thing to do"
 
-  ;; If is the OS the success function is called
-  (if (eq system-type os)
-      (funcall success)
+  ;; If is OSX call the success function
+  (if (eq system-type 'darwin)
+
+       	(funcall success)
+
     ;; Else if failure is not nil call it
     (if (not (eq nil failure))
-        ;; Call the failed function
-        (funcall failure))))
+
+	(funcall failure))))
+
+(defun lazy-load-major-mode (filextension action)
+
+  "Looks at the file extension, adds to auto-mode-list then calls the lamba"
+
+  ;; Add to auto-mode-list
+  (add-to-list 'auto-mode-alist
+               ;; Take the file extension call the lambda
+               '(filextension . (funcall action))))
 
 (defun font-lock-comment-annotations ()
   "Highlight a bunch of well known comment annotations. this function should be added to the hooks of the major modes used for programming"

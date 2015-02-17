@@ -17,14 +17,24 @@
 
   (setup-ui)
 
-  (setup-lisp)
+  (lazy-load-major-mode "\\.lisp\\'"
+                        (setup-lisp))
+  
+;; (add-to-list 'auto-mode-alist
+;;                '("\\.lisp\\'" . (lambda ()
+;;                                   (setup-lisp))))
 
-  (setup-ocaml)
+;;  (add-to-list 'auto-mode-alist '("\\.lisp\\'" (setup-lisp)))
 
-  (setup-clojure)
+  (lazy-load-major-mode "\\.ml\\'"
+                        (setup-ocaml))
 
-  (setup-org))
- 
+  (lazy-load-major-mode "\\.clj\\'"
+                        (setup-clojure))
+
+  (lazy-load-major-mode "\\.org\\'"
+                        (setup-org)))
+
 (defun setup-environment ()
 
   ;; Have better buffer switching
@@ -72,11 +82,13 @@
   (evil-mode 1)
 
   ;; Switch frames using the control/meta key
-  (isOS 'darwin 
-          '(lambda ()
-             (windmove-default-keybindings 'meta))
-          '(lambda ()
-             (windmove-default-keybindings 'control)))
+  (isOSX '(lambda ()
+
+	    (windmove-default-keybindings 'meta))
+	 
+	 '(lambda ()
+	    
+	    (windmove-default-keybindings 'control)))
     
   ;; Show line numbers
   (global-linum-mode 1))

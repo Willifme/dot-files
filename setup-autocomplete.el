@@ -1,4 +1,3 @@
-
 (defun setup-yasnippet ()
 
   ;; Requrie yasnippet
@@ -8,7 +7,6 @@
   (yas-global-mode 1))
 
 (defun setup-autocomplete ()
-
 
   ;; Load auto-complete
   (add-to-list 'load-path "~/.emacs.d/elpa/auto-complete")
@@ -52,8 +50,6 @@
   
   (add-to-list 'ac-sources 'ac-sources-c-headers)
 
-  (isOSX '(lambda ()
-
+  (isOS 'darwin '(lambda ()
 	 ;; Revise this later
-	     
 	 (add-to-list 'achead:include-directories '"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.0/include"))))
