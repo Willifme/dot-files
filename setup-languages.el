@@ -28,7 +28,10 @@
   (defalias 'cider-start 'cider-jack-in)
 
   ;; Set the path for cider to find lein
-  (add-to-list 'exec-path "/usr/local/bin"))
+  (add-to-list 'exec-path "/usr/local/bin")
+
+  ;; Have cider use the Clojure syntax highlighting 
+  (setq cider-repl-use-clojure-font-lock t))
 
 (defun setup-lisp ()
 
