@@ -21,6 +21,9 @@
 
 (defun setup-clojure ()
 
+  ;; Require paredit
+  (require 'paredit)
+  
   ;; Autoload paredit with clojure-mode
   (add-hook 'clojure-mode-hook #'paredit-mode)
 
@@ -87,5 +90,8 @@
 
   ;; Enable shift select for org-mode
   (setq shift-select-mode t)
+
+  ;; Disable the postamble
+  (setq org-export-html-postamble nil)
 
   (setq org-support-shift-select t))
