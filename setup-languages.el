@@ -92,6 +92,12 @@
   (setq shift-select-mode t)
 
   ;; Disable the postamble
-  (setq org-export-html-postamble nil)
+  (setq org-export-html-postamble 0)
 
-  (setq org-support-shift-select t))
+  (setq org-support-shift-select t)
+
+  ;; Require flyspell for spell checking
+  (require 'flyspell)
+  
+  ;; Enable fly speel in Org mode
+  (add-hook 'org-mode-hook 'turn-on-flyspell))
