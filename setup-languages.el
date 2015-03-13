@@ -1,10 +1,13 @@
 (defun setup-go ()
 
   ;; Load go-mode
-  (add-to-list 'load-path "~/.emacs.d/elpa/go-mode")
+  ;; (add-to-list 'load-path "~/.emacs.d/elpa/go-mode")
 
-  ;; Require go-mode
-  (require 'go-mode-autoloads)
+  ;; ;; Require go-mode
+  ;; (require 'go-mode-autoloads)
+
+  ;; Load mode when .go file open
+  (add-to-list 'auto-mode-alist '("\\.go\\'" . go-mode))
 
   ;; Require go-autocomplete
   (add-hook 'go-mode-hook
@@ -38,11 +41,18 @@
 
 (defun setup-lisp ()
 
-  (if (not (eq system-type 'windows-nt))
-	   
-	   (load (expand-file-name "~/quicklisp/slime-helper.el"))
+  ;; Checks to see if windows (do nothing) otherwise setup slime
+  (isOS 'windows-nt
 
-	   (setq inferior-lisp-program "sbcl")))
+        ;; Left blank on purpose
+
+        '(lambda ())
+
+        '(lambda ()
+
+           (load (expand-file-name "~/quicklisp/slime-helper.el"))
+
+           (setq inferior-lisp-program "sbcl"))))
 
 (defun setup-ocaml ()
 
