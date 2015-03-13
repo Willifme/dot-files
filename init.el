@@ -47,7 +47,7 @@
 
   (setq-default tab-width 4)
  
-  ;; Load emacs theme (hipster)
+  ;; Load emacs theme 
   (load-theme 'bubbleberry t)
 
   ;; Disable start screen

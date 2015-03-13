@@ -39,11 +39,17 @@
 (defun setup-lisp ()
 
   (if (not (eq system-type 'windows-nt))
-	   
-	   (load (expand-file-name "~/quicklisp/slime-helper.el"))
+      
+      (progn
+        
+         (load (expand-file-name "~/quicklisp/slime-helper.el"))
 
-	   (setq inferior-lisp-program "sbcl")))
-
+         (require 'slime-autoloads)
+         
+         (setq inferior-lisp-program "sbcl"))))
+         
+         
+         
 (defun setup-ocaml ()
 
   ;; Load tuareg - OCaml for Emacs
