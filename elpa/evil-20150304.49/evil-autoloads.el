@@ -3,7 +3,12 @@
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
+<<<<<<< HEAD:elpa/evil-20150304.49/evil-autoloads.el
 ;;;### (autoloads nil "evil" "evil.el" (21759 8612 0 0))
+=======
+;;;### (autoloads (evil-mode) "evil" "evil.el" (21763 8276 362377
+;;;;;;  364000))
+>>>>>>> origin:elpa/evil-20150304.49/evil-autoloads.el
 ;;; Generated autoloads from evil.el
 
 (defvar evil-mode nil "\
@@ -33,7 +38,11 @@ See `evil-local-mode' for more information on Evil-Local mode.
 ;;;;;;  "evil-common.el" "evil-core.el" "evil-digraphs.el" "evil-ex.el"
 ;;;;;;  "evil-integration.el" "evil-macros.el" "evil-maps.el" "evil-pkg.el"
 ;;;;;;  "evil-repeat.el" "evil-search.el" "evil-states.el" "evil-types.el"
+<<<<<<< HEAD:elpa/evil-20150304.49/evil-autoloads.el
 ;;;;;;  "evil-vars.el") (21759 8612 924914 0))
+=======
+;;;;;;  "evil-vars.el") (21763 8276 384657 453000))
+>>>>>>> origin:elpa/evil-20150304.49/evil-autoloads.el
 
 ;;;***
 

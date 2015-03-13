@@ -1,7 +1,12 @@
 ;;; rust-mode.el --- A major emacs mode for editing Rust source code
 
+<<<<<<< HEAD:elpa/rust-mode-20150308.1815/rust-mode.el
 ;; Version: 20150308.1815
 ;; X-Original-Version: 0.2.0
+=======
+;; Version: 0.2.0
+;; Package-Version: 20150308.1815
+>>>>>>> origin:elpa/rust-mode-20150308.1815/rust-mode.el
 ;; Author: Mozilla
 ;; Url: https://github.com/rust-lang/rust
 ;; Keywords: languages

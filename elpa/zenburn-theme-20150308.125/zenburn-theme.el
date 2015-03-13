@@ -4,8 +4,13 @@
 
 ;; Author: Bozhidar Batsov <bozhidar@batsov.com>
 ;; URL: http://github.com/bbatsov/zenburn-emacs
+<<<<<<< HEAD:elpa/zenburn-theme-20150308.125/zenburn-theme.el
 ;; Version: 20150308.125
 ;; X-Original-Version: 2.3-cvs
+=======
+;; Package-Version: 20150308.125
+;; Version: 2.3-cvs
+>>>>>>> origin:elpa/zenburn-theme-20150308.125/zenburn-theme.el
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by

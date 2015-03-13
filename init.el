@@ -23,6 +23,8 @@
 
   (setup-clojure)
 
+  (setup-go)
+
   (setup-org))
  
 (defun setup-environment ()
@@ -32,12 +34,6 @@
  
   ;; Set custom theme path so I can load the theme
   (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-
-  ;; Hide menu bar
-  (menu-bar-mode 0)
-
-  ;; Hide tool bar
-  (tool-bar-mode 0)
 
   ;; Set to have a transparent background
  ;; (set-frame-parameter (selected-frame) 'alpha '(88 70))
@@ -76,17 +72,20 @@
           '(lambda ()
              (windmove-default-keybindings 'meta))
           '(lambda ()
-             (windmove-default-keybindings 'control)))
-    
-  ;; Show line numbers
-  (global-linum-mode 1))
+             (windmove-default-keybindings 'control))))
 
 (defun setup-ui ()
 
-  ;; Require powerline
-  (require 'powerline)
+  ;; Hide menu bar
+  (menu-bar-mode 0)
 
-  (powerline-default-theme)
+  ;; Hide tool bar
+  (tool-bar-mode 0)
+
+  ;; Require powerline
+  ;;(require 'powerline)
+
+;;  (powerline-default-theme)
 
   ;; Set default font
   (set-face-attribute 'default nil :family "Inconsolata" 
@@ -94,7 +93,10 @@
                                 ('gnu/linux 130)
                                 ('darwin 145)) :weight 'normal)
 
-  ;; Show time on powerline
+  ;; Show line numbers
+  (global-linum-mode 1)
+
+  ;; Show time on line
   (display-time)
 
   ;; Bind Ctrl-P to do fuzzy file search
@@ -111,11 +113,11 @@
   (require 'package)
 
   ;; Add package manager archives
-  (setq package-archives
-	'(("marmalade" . "http://marmalade-repo.org/packages/")
-	  ("elpa" . "http://tromey.com/elpa/")
-	  ("melpa" . "http://melpa.milkbox.net/packages/")
-	  ("gnu" . "http://elpa.gnu.org/packages/")))
+  ;; (setq package-archives
+  ;; 	'(("marmalade" . "http://marmalade-repo.org/packages/")
+  ;; 	  ("elpa" . "http://tromey.com/elpa/")
+  ;; 	  ("melpa" . "http://melpa.milkbox.net/packages/")
+  ;; 	  ("gnu" . "http://elpa.gnu.org/packages/")))
 
   ;; Initialise the package manager
   (package-initialize)

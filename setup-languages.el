@@ -1,10 +1,13 @@
 (defun setup-go ()
 
   ;; Load go-mode
-  (add-to-list 'load-path "~/.emacs.d/elpa/go-mode")
+  ;; (add-to-list 'load-path "~/.emacs.d/elpa/go-mode")
 
-  ;; Require go-mode
-  (require 'go-mode-autoloads)
+  ;; ;; Require go-mode
+  ;; (require 'go-mode-autoloads)
+
+  ;; Load mode when .go file open
+  (add-to-list 'auto-mode-alist '("\\.go\\'" . go-mode))
 
   ;; Require go-autocomplete
   (add-hook 'go-mode-hook
@@ -37,19 +40,20 @@
   (setq cider-repl-use-clojure-font-lock t))
 
 (defun setup-lisp ()
+         
+  ;; Checks to see if windows (do nothing) otherwise setup slime
+  (isOS 'windows-nt
 
-  (if (not (eq system-type 'windows-nt))
-      
-      (progn
-        
-         (load (expand-file-name "~/quicklisp/slime-helper.el"))
+        ;; Left blank on purpose
 
-         (require 'slime-autoloads)
-         
-         (setq inferior-lisp-program "sbcl"))))
-         
-         
-         
+        '(lambda ())
+
+        '(lambda ()
+
+           (load (expand-file-name "~/quicklisp/slime-helper.el"))
+
+           (setq inferior-lisp-program "sbcl"))))
+
 (defun setup-ocaml ()
 
   ;; Load tuareg - OCaml for Emacs

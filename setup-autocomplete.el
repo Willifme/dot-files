@@ -33,7 +33,9 @@
 
   (lambda ()
 
-    (add-hook 'auto-complete-mode-hook 'ac-common-setup)
+    (add-hook 'c-mode-common-hook 'setup-autocomplete-c)
+
+    (add-hook 'c++-mode-hook 'setup-autocomplete-c)
 
     (global-auto-complete-mode t))
 
@@ -43,13 +45,14 @@
 
 (defun setup-autocomplete-c ()
 
-  ;; Load auto-complete-c-headers
   (add-to-list 'load-path "~/.emacs.d/elpa/auto-complete-c-headers")
 
   (require 'auto-complete-c-headers)
-  
-  (add-to-list 'ac-sources 'ac-sources-c-headers)
 
-  (isOS 'darwin '(lambda ()
-	 ;; Revise this later
-	 (add-to-list 'achead:include-directories '"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.0/include"))))
+  (load "~/.emacs.d/auto-complete-clang-async.el")
+
+  (require 'auto-complete-clang-async)
+
+  (setq ac-clang-complete-executable "~/.emacs.d/clang-complete")
+
+  (setq ac-sources '(ac-source-clang-async)))

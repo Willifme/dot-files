@@ -3,7 +3,12 @@
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
+<<<<<<< HEAD:elpa/paredit-20150217.713/paredit-autoloads.el
 ;;;### (autoloads nil "paredit" "paredit.el" (21747 17428 0 0))
+=======
+;;;### (autoloads (enable-paredit-mode paredit-mode) "paredit" "paredit.el"
+;;;;;;  (21744 45589 84192 949000))
+>>>>>>> origin:elpa/paredit-20150217.713/paredit-autoloads.el
 ;;; Generated autoloads from paredit.el
 
 (autoload 'paredit-mode "paredit" "\
@@ -24,6 +29,15 @@ Turn on pseudo-structural editing of Lisp code.
 
 ;;;***
 
+<<<<<<< HEAD:elpa/paredit-20150217.713/paredit-autoloads.el
+=======
+;;;### (autoloads nil nil ("paredit-pkg.el") (21744 45589 100180
+;;;;;;  731000))
+
+;;;***
+
+(provide 'paredit-autoloads)
+>>>>>>> origin:elpa/paredit-20150217.713/paredit-autoloads.el
 ;; Local Variables:
 ;; version-control: never
 ;; no-byte-compile: t
