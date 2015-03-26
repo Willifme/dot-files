@@ -29,9 +29,18 @@
  
 (defun setup-environment ()
 
+  ;; Require heml
+  (require 'helm-config)
+
+  ;; Bind helm to use M-x as default
+  (global-set-key (kbd "M-x") 'helm-M-x)
+
+  ;; Enable helm-mode
+  (helm-mode 1)
+  
   ;; Have better buffer switching
   (ido-mode 1)
-  
+ 
   ;; Set custom theme path so I can load the theme
   (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 
@@ -53,7 +62,7 @@
   (blink-cursor-mode -1)
 
   ;; Stop making backup files
-  (setq make-back-up-files nil)
+  (setq make-back-up-files 0)
   
   ;; Disable noise 
   (setq ring-bell-function 'ignore)
