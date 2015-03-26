@@ -31,7 +31,7 @@
 
   ;; Have better buffer switching
   (ido-mode 1)
- 
+  
   ;; Set custom theme path so I can load the theme
   (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 
@@ -44,7 +44,7 @@
   (setq-default tab-width 4)
  
   ;; Load emacs theme 
-  (load-theme 'bubbleberry t)
+  (load-theme 'twilight t)
 
   ;; Disable start screen
   (setq inhibit-startup-message t)
