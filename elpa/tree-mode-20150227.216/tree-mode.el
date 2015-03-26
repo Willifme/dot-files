@@ -5,15 +5,9 @@
 ;; Copyright 2007 Ye Wenbin
 ;;
 ;; Author: wenbinye@163.com
-<<<<<<< HEAD:elpa/tree-mode-20150227.216/tree-mode.el
-;; Package-Version: 1.1.1.1
-;; Version: 20150227.216
-;; X-Original-Version: $Id: tree-mode.el,v 1.1.1.1 2007-03-13 13:16:10 ywb Exp $
-=======
 ;; Package-Version: 20150227.216
 ;; Package-X-Original-Version: 1.1.1.1
 ;; Version: $Id: tree-mode.el,v 1.1.1.1 2007-03-13 13:16:10 ywb Exp $
->>>>>>> origin:elpa/tree-mode-20150227.216/tree-mode.el
 ;; Keywords: help, convenience, widget
 ;; 
 ;; This file is part of PDE (Perl Development Environment).

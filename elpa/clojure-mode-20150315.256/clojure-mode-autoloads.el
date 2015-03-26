@@ -3,13 +3,8 @@
 ;;; Code:
 
 
-<<<<<<< HEAD:elpa/clojure-mode-20150305.715/clojure-mode-autoloads.el
-;;;### (autoloads nil "clojure-mode" "clojure-mode.el" (21759 8618
-;;;;;;  0 0))
-=======
 ;;;### (autoloads (clojure-mode) "clojure-mode" "clojure-mode.el"
-;;;;;;  (21763 8280 230377 243000))
->>>>>>> origin:elpa/clojure-mode-20150305.715/clojure-mode-autoloads.el
+;;;;;;  (21780 16263 670418 815000))
 ;;; Generated autoloads from clojure-mode.el
 
 (autoload 'clojure-mode "clojure-mode" "\
@@ -25,8 +20,8 @@ Major mode for editing Clojure code.
 
 ;;;***
 
-;;;### (autoloads nil nil ("clojure-mode-pkg.el") (21763 8280 240085
-;;;;;;  955000))
+;;;### (autoloads nil nil ("clojure-mode-pkg.el") (21780 16263 688944
+;;;;;;  220000))
 
 ;;;***
 

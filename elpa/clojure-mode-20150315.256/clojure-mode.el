@@ -8,14 +8,9 @@
 ;;       Phil Hagelberg <technomancy@gmail.com>
 ;;       Bozhidar Batsov <bozhidar@batsov.com>
 ;; URL: http://github.com/clojure-emacs/clojure-mode
-;; Package-Version: 20150305.715
+;; Package-Version: 20150315.256
 ;; Keywords: languages clojure clojurescript lisp
-<<<<<<< HEAD:elpa/clojure-mode-20150305.715/clojure-mode.el
-;; Version: 20150305.715
-;; X-Original-Version: 4.0.1
-=======
 ;; Version: 4.0.1
->>>>>>> origin:elpa/clojure-mode-20150305.715/clojure-mode.el
 ;; Package-Requires: ((emacs "24.1"))
 
 ;; This file is not part of GNU Emacs.
@@ -450,7 +445,7 @@ Called by `imenu--generic-function'."
          "\\>")
        0 font-lock-builtin-face)
       ;; Dynamic variables - *something* or @*something*
-      ("\\<@?\\(\\*[a-z-]*\\*\\)\\>" 1 font-lock-variable-name-face)
+      ("\\(?:\\<\\|/\\)@?\\(\\*[a-z-]*\\*\\)\\>" 1 font-lock-variable-name-face)
       ;; Global constants - nil, true, false
       (,(concat
          "\\<"

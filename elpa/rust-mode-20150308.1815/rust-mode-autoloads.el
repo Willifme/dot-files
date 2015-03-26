@@ -1,14 +1,10 @@
 ;;; rust-mode-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
+
 
-<<<<<<< HEAD:elpa/rust-mode-20150308.1815/rust-mode-autoloads.el
-;;;### (autoloads nil "rust-mode" "rust-mode.el" (21759 8611 0 0))
-=======
-;;;### (autoloads (rust-mode) "rust-mode" "rust-mode.el" (21763 8273
-;;;;;;  50377 468000))
->>>>>>> origin:elpa/rust-mode-20150308.1815/rust-mode-autoloads.el
+;;;### (autoloads (rust-mode) "rust-mode" "rust-mode.el" (21780 16120
+;;;;;;  786414 276000))
 ;;; Generated autoloads from rust-mode.el
 
 (autoload 'rust-mode "rust-mode" "\
@@ -20,18 +16,16 @@ Major mode for Rust code.
 
 ;;;***
 
-<<<<<<< HEAD:elpa/rust-mode-20150308.1815/rust-mode-autoloads.el
-=======
-;;;### (autoloads nil nil ("rust-mode-pkg.el") (21763 8273 59509
-;;;;;;  672000))
+;;;### (autoloads nil nil ("rust-mode-pkg.el") (21780 16120 807181
+;;;;;;  190000))
 
 ;;;***
 
 (provide 'rust-mode-autoloads)
->>>>>>> origin:elpa/rust-mode-20150308.1815/rust-mode-autoloads.el
 ;; Local Variables:
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; rust-mode-autoloads.el ends here
