@@ -1,10 +1,10 @@
 ;;; evil-visual-mark-mode-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-
+(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads (evil-visual-mark-mode) "evil-visual-mark-mode"
-;;;;;;  "evil-visual-mark-mode.el" (21780 16202 230416 863000))
+;;;### (autoloads nil "evil-visual-mark-mode" "evil-visual-mark-mode.el"
+;;;;;;  (21856 32648 0 0))
 ;;; Generated autoloads from evil-visual-mark-mode.el
 
 (defvar evil-visual-mark-mode nil "\
@@ -23,16 +23,9 @@ Makes evil marks visible and easy to remember.
 
 ;;;***
 
-;;;### (autoloads nil nil ("evil-visual-mark-mode-pkg.el") (21780
-;;;;;;  16202 241582 413000))
-
-;;;***
-
-(provide 'evil-visual-mark-mode-autoloads)
 ;; Local Variables:
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
-;; coding: utf-8
 ;; End:
 ;;; evil-visual-mark-mode-autoloads.el ends here

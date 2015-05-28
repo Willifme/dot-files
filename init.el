@@ -1,139 +1,77 @@
-(defun setup-initial ()
+;;; Initial Setup
 
-  ;; Load the utils for things like isOSX
-  (load "~/.emacs.d/utils.el")
+;; Require package
+(require 'package)
 
-  ;; Load the languages setup functions
-  (load "~/.emacs.d/setup-languages.el")
+;; Repo's for ELPA
+(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+                         ("marmalade" . "https://marmalade-repo.org/packages/")
+                         ("melpa" . "http://melpa.org/packages/")))
 
-  ;; Load the autocomplete functions
-  (load "~/.emacs.d/setup-autocomplete.el")
-  
-  (setup-packages)
+;; Enable packages - Load them
+(package-initialize)
 
-  (setup-environment)
-  
-  (setup-autocomplete)
+;; Hide menu bar
+(menu-bar-mode -1)
 
-  (setup-ui)
+;; Hide tool-bar
+(tool-bar-mode -1)
 
-  (setup-lisp)
+;; Disable scrollbars if not on a terminal
+(if (display-graphic-p)
+    (scroll-bar-mode -1))
 
-  (setup-ocaml)
+;; Prevent the creation of backup files
+(setq make-backup-files nil)
 
-  (setup-clojure)
+;; Set a default location for themes to be installed
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 
-  (setup-go)
+;; Load the theme
+(load-theme 'gruvbox t)
 
-  (setup-org))
- 
-(defun setup-environment ()
+;; Set font
+(set-default-font "Droid Sans Mono")
 
-  ;; Require heml
-  (require 'helm-config)
+;; Require neotree - Tree navigation
+(require 'neotree)
 
-  ;; Bind helm to use M-x as default
-  (global-set-key (kbd "M-x") 'helm-M-x)
+;; Require ido-mode
+(require 'ido)
 
-  ;; Enable helm-mode
-  (helm-mode 1)
-  
-  ;; Have better buffer switching
-  (ido-mode 1)
- 
-  ;; Set custom theme path so I can load the theme
-  (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+;; Enable ido-mode
+(ido-mode t)
 
-  ;; Set to have a transparent background
- ;; (set-frame-parameter (selected-frame) 'alpha '(88 70))
- 
-  ;; Set tab width to be 4 spaces
-  (setq-default indent-tabs-mode nil)
+;; Enable relative line numbers
+(global-relative-line-numbers-mode)
 
-  (setq-default tab-width 4)
- 
-  ;; Load emacs theme 
-  (load-theme 'twilight t)
+;; Require Evil-mode
+(require 'evil)
 
-  ;; Disable start screen
-  (setq inhibit-startup-message t)
-  
-  ;; Disable blinking cursor
-  (blink-cursor-mode -1)
+;; Enable Evil-mode itself
+(evil-mode 1)
 
-  ;; Stop making backup files
-  (setq make-back-up-files 0)
-  
-  ;; Disable noise 
-  (setq ring-bell-function 'ignore)
+;; Switch between splits with control 
+(eval-after-load "evil"
+  '(progn
+     (define-key evil-normal-state-map (kbd "C-h") 'evil-window-left)
+     (define-key evil-normal-state-map (kbd "C-j") 'evil-window-down)
+     (define-key evil-normal-state-map (kbd "C-k") 'evil-window-up)
+     (define-key evil-normal-state-map (kbd "C-l") 'evil-window-right)))
 
-  ;; Stop flashing cursor - hopefully
-  (setq ac-use-fuzzy nil)
+;;; Magical voodo
 
-  ;; Require evil-mode (vim keybindings)
-  (require 'evil)
+;; Require key-chord
+(require 'key-chord)
 
-  ;; Enable evil mode
-  (evil-mode 1)
+;; Enable key-chord
+(key-chord-mode 1)
 
-  ;; Switch frames using the control/meta key
-  (isOS 'darwin 
-          '(lambda ()
-             (windmove-default-keybindings 'meta))
-          '(lambda ()
-             (windmove-default-keybindings 'control))))
+;; List of all possible keys for escaping
+(setq keys '("hj" "hk" "hl" "jh" "jk" "jl" "kh" "kj" "kl" "lh" "lj" "lk"))
 
-(defun setup-ui ()
+;; Iterate over the list and assign the shortcuts
+(dolist (key keys)
+  (setq key-chrod-two-keys-delay 0.2)
+  (key-chord-define-global key 'evil-normal-state))
 
-  ;; Hide menu bar
-  (menu-bar-mode 0)
-
-  ;; Hide tool bar
-  (tool-bar-mode 0)
-
-  ;; Require powerline
-  ;;(require 'powerline)
-
-;;  (powerline-default-theme)
-
-  ;; Set default font
-  (set-face-attribute 'default nil :family "Inconsolata" 
-                      :height (case system-type
-                                ('gnu/linux 130)
-                                ('darwin 145)) :weight 'normal)
-
-  ;; Show line numbers
-  (global-linum-mode 1)
-
-  ;; Show time on line
-  (display-time)
-
-  ;; Bind Ctrl-P to do fuzzy file search
-  (global-set-key (kbd "C-x p") 'fiplr-find-file)
-
-  ;; For better indentation (I think) 
-  (global-set-key (kbd "<S-tab>") 'un-indent-by-removing-4-spaces)
-  
-  (add-hook 'prog-mode-hook 'font-lock-comment-annotations))
-
-(defun setup-packages ()
-
-  ;; Require the "package" package for the package manager
-  (require 'package)
-
-  ;; Add package manager archives
-  (setq package-archives
-  	'(("marmalade" . "http://marmalade-repo.org/packages/")
-  	  ("elpa" . "http://tromey.com/elpa/")
-  	  ("melpa" . "http://melpa.milkbox.net/packages/")
-  	  ("gnu" . "http://elpa.gnu.org/packages/")))
-
-  ;; Initialise the package manager
-  (package-initialize)
-
-  ;; Referesh packages
-  (unless package-archive-contents
-    (pacakge-refresh-contents)))
-
-;; Call the main function to start the config
-(setup-initial)

@@ -1,7 +1,0 @@
-vim
-rustc test.rs 
-rust
-exit
-ls
-touch setup-languages.el
-exit
