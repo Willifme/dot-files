@@ -35,7 +35,7 @@ Plugin 'myusuf3/numbers.vim'
 " panes)
 Plugin 'christoomey/vim-tmux-navigator'
 " Colour scheme
-Plugin 'morhetz/gruvbox'
+Plugin 'ajh17/Spacegray.vim'
 " Rails intergration for vim
 Plugin 'tpope/vim-rails'
 " Multiple cursors
@@ -50,7 +50,7 @@ call vundle#end()
 filetype plugin indent on
 set background=dark
 " Set colourscheme
-colorscheme gruvbox
+colorscheme spacegray
 " Enable line numbers
 set number
 " Enable UTF-8
