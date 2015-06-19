@@ -44,6 +44,8 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'elixir-lang/vim-elixir'
 " JSX support
 Plugin 'mxw/vim-jsx'
+" Slime like tmux
+Plugin 'epeli/slimux'
 " All of the Plugins must be added before the following line
 call vundle#end()
 " This does a thing but is required
