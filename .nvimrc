@@ -1,53 +1,47 @@
 " Be iMproved, required
 set nocompatible
 filetype off
-" Set the runtime path to include Vundle and initialise
-set rtp+=~/.nvim/bundle/Vundle.vim
-" Let Vundle manage Vundle, required
-call vundle#begin()
-" Set Vundle location to be different to that of the Vim one
-call vundle#rc("~/.nvim/bundle/")
-" Let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
+" Let Plug manage Plug, required
+call plug#begin('~/.dotfiles/.nvim/plugged')
 " Require go-mode
-Plugin 'fatih/vim-go'
+Plug 'fatih/vim-go'
 " Require Youleader-*ompleteMe
-Plugin 'valloric/youcompleteme'
+Plug 'valloric/youcompleteme'
 " Require ctrlp
-Plugin 'kien/ctrlp.vim'
+Plug 'kien/ctrlp.vim'
 " Require vim-javascript (Better javascript mode)
-Plugin 'pangloss/vim-javascript'
+Plug 'pangloss/vim-javascript'
 " Require Nerdtree for a file tree
-Plugin 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree'
 " Require Rust.vim for Rust support
-Plugin 'wting/rust.vim'
+Plug 'wting/rust.vim'
 " Require Tabular
-Plugin 'godlygeek/tabular'
+Plug 'godlygeek/tabular'
 " Require Markdown mode
-Plugin 'plasticboy/vim-markdown'
+Plug 'plasticboy/vim-markdown'
 " Require coffeescript mode
-Plugin 'vim-coffee-script'
+Plug 'vim-coffee-script'
 " Require syntastic
-Plugin 'scrooloose/syntastic'
+Plug 'scrooloose/syntastic'
 " Require numbers.vim - better line numbers
-Plugin 'myusuf3/numbers.vim'
-" Require vim-tmux-navigator. (Better switching between vim splits and tmux
-" panes)
-Plugin 'christoomey/vim-tmux-navigator'
+Plug 'myusuf3/numbers.vim'
+" Require vim-tmux-navigator - Better switching between vim splits and tmux
+" panes
+Plug 'christoomey/vim-tmux-navigator'
 " Colour scheme
-Plugin 'ajh17/Spacegray.vim'
+Plug 'ajh17/Spacegray.vim'
 " Rails intergration for vim
-Plugin 'tpope/vim-rails'
+Plug 'tpope/vim-rails'
 " Multiple cursors
-Plugin 'terryma/vim-multiple-cursors'
+Plug 'terryma/vim-multiple-cursors'
 " Elixir support    
-Plugin 'elixir-lang/vim-elixir'
+Plug 'elixir-lang/vim-elixir'
 " JSX support
-Plugin 'mxw/vim-jsx'
+Plug 'mxw/vim-jsx'
 " Slime like tmux
-Plugin 'epeli/slimux'
-" All of the Plugins must be added before the following line
-call vundle#end()
+Plug 'epeli/slimux'
+" All of the Plugs must be added before the following line
+call plug#end()
 " This does a thing but is required
 filetype plugin indent on
 set background=dark
@@ -63,10 +57,12 @@ set shiftwidth=4
 set expandtab
 " Exit insert mode quicker (Escape time out)
 set nottimeout
-" Enable syntax
+" Enable syntax highlighting
 syntax on
 " Disable the creation of swap-files
 set swapfile
+" Change Ctrl-P to search Files, Buffers and MRU files at one
+let g:ctrlp_cmd = 'CtrlPMixed'
 "Easier buffer switching
 nnoremap <S-J> <C-W><C-J>
 nnoremap <S-K> <C-W><C-K>
