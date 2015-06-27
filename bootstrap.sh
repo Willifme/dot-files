@@ -13,6 +13,6 @@ ln -s .dotfiles/.tmux.conf ~/.tmux.conf
 cd .dotfiles
 
 #Install youcompleteme
-cd .nvim/bundle/youcompleteme/
+cd .nvim/plugged/youcompleteme/
 
-#./install.sh --clang-completer
+./install.sh --clang-completer
