@@ -4,9 +4,11 @@ cd ~
 
 rm -r .nvimrc
 rm .nvim
+rm .tmux.conf
 
 ln -s .dotfiles/.nvimrc ~/.nvimrc
 ln -s .dotfiles/.nvim ~/.nvim
+ln -s .dotfiles/.tmux.conf ~/.tmux.conf
 
 cd .dotfiles
 
