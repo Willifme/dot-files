@@ -40,6 +40,8 @@ Plug 'elixir-lang/vim-elixir'
 Plug 'mxw/vim-jsx'
 " Slime like tmux
 Plug 'epeli/slimux'
+" Elm support for vim
+Plug 'lambdatoast/elm.vim'
 " All of the Plugs must be added before the following line
 call plug#end()
 " This does a thing but is required
