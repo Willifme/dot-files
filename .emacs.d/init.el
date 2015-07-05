@@ -8,6 +8,9 @@
 ;; Don't create backup files
 (setq make-backup-files nil)
 
+;; Don't create auto-save files
+(setq auto-save-default nil)
+
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 
 ;; Only load spacegray if in the terminal
