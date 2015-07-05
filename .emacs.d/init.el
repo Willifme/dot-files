@@ -10,7 +10,9 @@
 
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 
-(load-theme 'spacegray t)
+;; Only load spacegray if in the terminal
+(unless (display-graphic-p)
+  (load-theme 'spacegray t))
 
 ;; Require relative linenumbers
 (require 'linum-relative)

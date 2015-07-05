@@ -1,82 +1,86 @@
-((("hello" .
-   [4 0 0 0 0])
-  ("input" .
-   [2 0 0 0 0])
-  ("make-backup-files" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("custom-theme-" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("load-theme" .
-   [2 0 0 0 0 0 0 0 0 0])
-  ("nil" .
-   [1 0 0])
-  ("make-backup-file" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("setq" .
-   [3 0 0 0])
-  ("linum-mode" .
-   [1 0 0 0 0 0 0 0 0 0])
-  ("evil-insert" .
-   [1 0 0 0 0 0 0 0 0 0 0])
-  ("when" .
-   [3 0 0 0])
-  ("boundp" .
-   [1 0 0 0 0 0])
-  ("evil-normal-state-minor-mode" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("print" .
-   [14 0 0 0 0])
-  ("bound-and-true-p" .
-   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("progn" .
+((("thing" .
    [1 0 0 0 0])
-  ("require" .
-   [2 0 0 0 0 0 0])
-  ("linum-relative" .
-   [0 0 0 0 0 0 0 0 2 0 0 0 0 0])
-  ("global-linum-mode" .
-   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("asdf" .
-   [1 0 0 0])
-  ("constructor" .
-   [0 0 0 0 0 0 0 0 1 0 0])
-  ("console" .
-   [1 0 0 0 0 0 1])
-  ("log" .
-   [2 0 0])
-  ("Example" .
-   [1 0 0 0 0 0 0])
-  ("div" .
-   [1 0 0])
-  ("not" .
-   [3 0 0])
-  ("if" .
-   [2 0])
-  ("evil-normal-state-entry-hook" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("evil-normal-state-map" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("load" .
-   [1 0 0 0])
-  ("add-to-list" .
-   [1 0 0 0 0 0 0 0 0 0 1])
-  ("custom-theme-load-path" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0])
-  ("helm-config" .
-   [1 0 0 0 0 0 0 0 0 0 0])
-  ("add-hook" .
-   [1 0 0 0 0 0 0 0])
-  ("lisp-mode" .
-   [1 0 0 0 0 0 0 0 0])
-  ("lisp-mode-hook" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("enable-paredit-mode" .
-   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
-  ("let" .
-   [1 0 0])
-  ("defun" .
-   [2 0 0 0 0])
   ("name" .
    [1 0 0 0])
-  ("thing" .
-   [1 0 0 0 0])))
+  ("defun" .
+   [2 0 0 0 0])
+  ("let" .
+   [1 0 0])
+  ("enable-paredit-mode" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("lisp-mode-hook" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("lisp-mode" .
+   [1 0 0 0 0 0 0 0 0])
+  ("add-hook" .
+   [1 0 0 0 0 0 0 0])
+  ("helm-config" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("custom-theme-load-path" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0])
+  ("add-to-list" .
+   [1 0 0 0 0 0 0 0 0 0 1])
+  ("load" .
+   [1 0 0 0])
+  ("evil-normal-state-map" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("evil-normal-state-entry-hook" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("if" .
+   [2 0])
+  ("not" .
+   [4 0 0])
+  ("div" .
+   [1 0 0])
+  ("Example" .
+   [1 0 0 0 0 0 0])
+  ("log" .
+   [2 0 0])
+  ("console" .
+   [1 0 0 0 0 0 1])
+  ("constructor" .
+   [0 0 0 0 0 0 0 0 1 0 0])
+  ("asdf" .
+   [1 0 0 0])
+  ("global-linum-mode" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("linum-relative" .
+   [0 0 0 0 0 0 0 0 2 0 0 0 0 0])
+  ("require" .
+   [2 0 0 0 0 0 0])
+  ("progn" .
+   [1 0 0 0 0])
+  ("bound-and-true-p" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("print" .
+   [14 0 0 0 0])
+  ("evil-normal-state-minor-mode" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("boundp" .
+   [1 0 0 0 0 0])
+  ("when" .
+   [3 0 0 0])
+  ("evil-insert" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("linum-mode" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("setq" .
+   [3 0 0 0])
+  ("make-backup-file" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("nil" .
+   [1 0 0])
+  ("load-theme" .
+   [2 0 0 0 0 0 0 0 0 0])
+  ("custom-theme-" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("make-backup-files" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("input" .
+   [2 0 0 0 0])
+  ("hello" .
+   [4 0 0 0 0])
+  ("display-graphic-p" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("unless" .
+   [1 0 0 0 0 0])))

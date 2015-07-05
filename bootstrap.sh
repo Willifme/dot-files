@@ -17,4 +17,4 @@ cd .dotfiles
 #Install youcompleteme
 cd .nvim/plugged/youcompleteme/
 
-./install.sh --clang-completer
+#./install.sh --clang-completer
