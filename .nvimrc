@@ -42,6 +42,8 @@ Plug 'mxw/vim-jsx'
 Plug 'epeli/slimux'
 " Elm support for vim
 Plug 'lambdatoast/elm.vim'
+" Require support for Slim templating
+Plug 'slim-template/vim-slim'
 " All of the Plugs must be added before the following line
 call plug#end()
 " This does a thing but is required
