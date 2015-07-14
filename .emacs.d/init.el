@@ -30,6 +30,12 @@
 ;; Enable helm
 (require 'helm-config)
 
+;; Set the current line to show the ABSOLUTE line number
+(setq linum-relative-current-symbol "")
+
+;; For C-mode use 4 spaces for indent
+(setq-default c-basic-offset 4)
+
 ;; Use helm M-x
 (global-set-key (kbd "M-x") 'helm-M-x)
 
