@@ -66,7 +66,7 @@ syntax on
 " Disable the creation of swap-files
 set swapfile
 " Change Ctrl-P to search Files, Buffers and MRU files at one
-let g:ctrlp_cmd = 'CtrlPMixed'
+"let g:ctrlp_cmd = 'CtrlPMixed'
 " Let vim-go error fail silently
 let g:go_fmt_fail_silently = 1
 "Easier buffer switching
