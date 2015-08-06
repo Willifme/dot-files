@@ -14,14 +14,8 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 
 ;; Only load spacegray if in the terminal
-(unless (display-graphic-p)
+(if (display-graphic-p)
   (load-theme 'spacegray t))
-
-;; Require relative linenumbers
-(require 'linum-relative)
-
-;; Enable line number mode
-(global-linum-mode)
 
 (require 'evil)
 
@@ -30,14 +24,10 @@
 ;; Enable helm
 (require 'helm-config)
 
-;; Set the current line to show the ABSOLUTE line number
-(setq linum-relative-current-symbol "")
+(helm-mode 1)
 
 ;; For C-mode use 4 spaces for indent
 (setq-default c-basic-offset 4)
-
-;; Use helm M-x
-(global-set-key (kbd "M-x") 'helm-M-x)
 
 (define-key evil-normal-state-map (kbd "C-p") 'helm-multi-files)
 
@@ -46,6 +36,9 @@
 
 ;; Disable menubar
 (menu-bar-mode -1)
+
+;; Disable scrollbars
+(scroll-bar-mode -1)
 
 ;; Use default autocomplete config
 (ac-config-default)
