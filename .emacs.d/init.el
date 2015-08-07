@@ -31,22 +31,35 @@
 
 (define-key evil-normal-state-map (kbd "C-p") 'helm-multi-files)
 
+;; Enable relativeline numbers globally
+(global-relative-line-numbers-mode)
+
 ;; Disable toolbar
 (tool-bar-mode -1)
 
 ;; Disable menubar
 (menu-bar-mode -1)
 
-;; Disable scrollbars
-(scroll-bar-mode -1)
+;; Disable scrollbars if running the GUI
+(if (display-graphic-p)
+    (scroll-bar-mode -1))
+
+;; Default to using y or n for yes and no prompts
+(defalias 'yes-or-no-p 'y-or-n-p)
 
 ;; Use default autocomplete config
 (ac-config-default)
 
+;; Use proper indentation for Org-mode
+(add-hook 'org-mode-hook
+	  (lambda ()
+	    (org-indent-mode t))
+	  t)
+
 ;; Enable paredit when using lisp's
 (autoload 'enable-paredit-mode "paredit" "Turn on pseudo-structural editing of Lisp code." t)
 (add-hook 'emacs-lisp-mode-hook #'enable-paredit-mode)
-(add-hook 'ielm-mode-hook             #'enable-paredit-mode)
+(add-hook 'ielm-mode-hook #'enable-paredit-mode)
 
 (require 'windmove)
 
@@ -70,4 +83,3 @@
 ;; If not using windows load the OCaml stuff
 (unless (not 'windows-nt)
     (load "~/.emacs.d/ocaml.el"))
-
