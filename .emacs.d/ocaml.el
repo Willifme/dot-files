@@ -24,6 +24,11 @@
       (append '(("\\.ml[ily]?$" . tuareg-mode)
 		("\\.topml$" . tuareg-mode))
 	      auto-mode-alist))
+
 (add-hook 'tuareg-mode-hook 'merlin-mode)
+(add-hook 'tuareg-mode-hook 'utop-minor-mode)
+
+(setq tuareg-in-indent -1)
+
 (setq merlin-use-auto-complete-mode t)
 (setq merlin-error-after-save nil)

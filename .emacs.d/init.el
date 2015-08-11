@@ -31,8 +31,10 @@
 
 (define-key evil-normal-state-map (kbd "C-p") 'helm-multi-files)
 
-;; Enable relativeline numbers globally
-(global-relative-line-numbers-mode)
+;; If not on Windows, use the relative-lumbers-mode which breaks on windows
+(unless (not 'windows-nt) 
+    ;; Enable relativeline numbers lobally
+    (global-relative-line-numbers-mode))
 
 ;; Disable toolbar
 (tool-bar-mode -1)
@@ -58,8 +60,13 @@
 
 ;; Enable paredit when using lisp's
 (autoload 'enable-paredit-mode "paredit" "Turn on pseudo-structural editing of Lisp code." t)
+
 (add-hook 'emacs-lisp-mode-hook #'enable-paredit-mode)
 (add-hook 'ielm-mode-hook #'enable-paredit-mode)
+
+;; Rainbow delimiters
+(add-hook 'emacs-lisp-mode-hook #'rainbow-delimiters-mode)
+(add-hook 'ielm-mode-hook #'rainbow-delimiters-mode)
 
 (require 'windmove)
 
@@ -70,7 +77,8 @@
 
 ;; If not using windows load the lisp stuff
 (unless (not 'windows-nt)
-    (load "~/.emacs.d/lisp.el"))
+  (load "~/.emacs.d/lisp.el")
+  (load "~/.emacs.d/clojure.el"))
 
 ;; Bindings for evil-mode
 (add-hook 'neotree-mode-hook
