@@ -32,3 +32,6 @@
 
 (setq merlin-use-auto-complete-mode t)
 (setq merlin-error-after-save nil)
+
+;; Use ocp-indent for indentation
+(require 'ocp-indent) 

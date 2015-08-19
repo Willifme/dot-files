@@ -58,6 +58,12 @@
 	    (org-indent-mode t))
 	  t)
 
+;; Load writing-mode
+;;(load "~/.emacs.d/writing-minor-mode.el")
+
+;; Use writing-mode in org-mode
+;;(add-hook 'org-mode-hook #'writing-mode-hook)
+
 ;; Enable paredit when using lisp's
 (autoload 'enable-paredit-mode "paredit" "Turn on pseudo-structural editing of Lisp code." t)
 
