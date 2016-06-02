@@ -74,7 +74,7 @@ set clipboard=unnamed,unnamedplus
 " Use the semicolon for the colon - this should be quicker
 nnoremap ; :
 " When hitting Ctrl-P run :FZF
-nnoremap <C-p> :FZF<CR> 
+nnoremap <C-p> :FZF<CR>
 " Switch between buffers easily
 nnoremap <S-n> :bprevious<CR>
 nnoremap <S-m> :bprevious<CR>
