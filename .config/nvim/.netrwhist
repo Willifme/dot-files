@@ -1,5 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =6
 let g:netrw_dirhist_1='/Users/william/Documents/super-rentals'
 let g:netrw_dirhist_2='/Users/william/Documents/super-rentals/app'
 let g:netrw_dirhist_3='/Users/william/Documents/TestInterpreter/_build'
+let g:netrw_dirhist_4='/Users/william/Documents/hello_app/app'
+let g:netrw_dirhist_5='/Users/william/Documents/hello_app/app/controllers'
+let g:netrw_dirhist_6='/Users/william/.dotfiles/.config/nvim'

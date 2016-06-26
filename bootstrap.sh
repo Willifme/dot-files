@@ -1,20 +1,15 @@
 cd ~
 
-#git clone https://github.com/gmarik/Vundle.vim.git ~/.dotfiles/.nvim/bundle/Vundle.vim
+#rm -r ~/.config/nvim/
+#rm .tmux.conf
 
-rm -r .emacs.d
-rm -r .nvimrc
-rm .nvim
-rm .tmux.conf
+#ln -s .dotfiles/.emacs.d ~/.emacs.d
+ln -s .dotfiles/.config/nvim ~/.config/nvim
+#ln -s .dotfiles/.tmux.conf ~/.tmux.conf
 
-ln -s .dotfiles/.emacs.d ~/.emacs.d
-ln -s .dotfiles/.nvimrc ~/.nvimrc
-ln -s .dotfiles/.nvim ~/.nvim
-ln -s .dotfiles/.tmux.conf ~/.tmux.conf
-
-cd .dotfiles
+#cd .dotfiles
 
 #Install youcompleteme
-cd .nvim/plugged/youcompleteme/
+#cd .nvim/plugged/youcompleteme/
 
 #./install.sh --clang-completer

@@ -13,9 +13,9 @@
 
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 
-;; Only load spacegray if in the terminal
-(if (display-graphic-p)
-  (load-theme 'spacegray t))
+;; Only load spacegray if running the GUI
+ (if (display-graphic-p)
+   (load-theme 'brin t))
 
 (require 'evil)
 
@@ -31,10 +31,7 @@
 
 (define-key evil-normal-state-map (kbd "C-p") 'helm-multi-files)
 
-;; If not on Windows, use the relative-lumbers-mode which breaks on windows
-(unless (not 'windows-nt) 
-    ;; Enable relativeline numbers lobally
-    (global-relative-line-numbers-mode))
+(global-linum-mode)
 
 ;; Disable toolbar
 (tool-bar-mode -1)
@@ -50,7 +47,7 @@
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 ;; Use default autocomplete config
-(ac-config-default)
+;;(ac-config-default)
 
 ;; Use proper indentation for Org-mode
 (add-hook 'org-mode-hook
@@ -58,21 +55,15 @@
 	    (org-indent-mode t))
 	  t)
 
-;; Load writing-mode
-;;(load "~/.emacs.d/writing-minor-mode.el")
+;; Use the British dictionary instead
+;;(setq ispell-dictionary "aspell")
 
-;; Use writing-mode in org-mode
-;;(add-hook 'org-mode-hook #'writing-mode-hook)
-
-;; Enable paredit when using lisp's
-(autoload 'enable-paredit-mode "paredit" "Turn on pseudo-structural editing of Lisp code." t)
-
-(add-hook 'emacs-lisp-mode-hook #'enable-paredit-mode)
-(add-hook 'ielm-mode-hook #'enable-paredit-mode)
-
-;; Rainbow delimiters
-(add-hook 'emacs-lisp-mode-hook #'rainbow-delimiters-mode)
-(add-hook 'ielm-mode-hook #'rainbow-delimiters-mode)
+;; Enable flyspell for org-mode
+;; (add-hook 'org-mode-hook
+;; 	  (lambda ()
+;; 	    (setq ispell-program-name "aspell")
+;; 	    (setq ispell-extra-args '("--sug-mode=ultra" "--lang=en_GB")) 
+;; 	    (flyspell-mode 1)))
 
 (require 'windmove)
 
@@ -80,20 +71,9 @@
 (define-key evil-normal-state-map (kbd "\S-j") 'windmove-down)
 (define-key evil-normal-state-map (kbd "\S-k") 'windmove-up)
 (define-key evil-normal-state-map (kbd "\S-l") 'windmove-right)
+(define-key evil-normal-state-map (kbd ";") 'evil-ex)
 
 ;; If not using windows load the lisp stuff
-(unless (not 'windows-nt)
-  (load "~/.emacs.d/lisp.el")
-  (load "~/.emacs.d/clojure.el"))
-
-;; Bindings for evil-mode
-(add-hook 'neotree-mode-hook
-	  (lambda ()
-	    (define-key evil-normal-state-local-map (kbd "TAB") 'neotree-enter)
-	    (define-key evil-normal-state-local-map (kbd "SPC") 'neotree-enter)
-	    (define-key evil-normal-state-local-map (kbd "q") 'neotree-hide)
-	                  (define-key evil-normal-state-local-map (kbd "RET") 'neotree-enter)))
-
-;; If not using windows load the OCaml stuff
-(unless (not 'windows-nt)
-    (load "~/.emacs.d/ocaml.el"))
+;; (unless (not 'windows-nt)
+;;   (load "~/.emacs.d/lisp.el")
+;;   (load "~/.emacs.d/clojure.el"))
