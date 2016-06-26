@@ -26,6 +26,3 @@
 (define-key evil-normal-state-map (kbd ";") 'evil-ex)
 (define-key evil-normal-state-map (kbd "\C-p") 'helm-find-files)
 (define-key evil-normal-state-map (kbd "\S-p") 'helm-mini)
-(define-key evil-normal-state-map (kbd "\C-x b") 'helm-mini)
-
-(load-theme 'atom-one-dark t)
